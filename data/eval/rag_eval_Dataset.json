@@ -1,0 +1,92 @@
+[
+  {
+    "id": "E01",
+    "category": "room_rule",
+    "question": "Which room does the Waikiki Community Center class use on the second Tuesday of the month?",
+    "expected_answer_contains": "Room 205E"
+  },
+  {
+    "id": "E02",
+    "category": "room_rule",
+    "question": "What is the normal room for the Waikiki Tuesday class?",
+    "expected_answer_contains": "Auditorium"
+  },
+  {
+    "id": "E03",
+    "category": "schedule_time",
+    "question": "What time is the St. Peters Jazzercise class on Monday?",
+    "expected_answer_contains": "5:00 PM"
+  },
+  {
+    "id": "E04",
+    "category": "schedule_time",
+    "question": "What time is the Waikiki Community Center class on Monday?",
+    "expected_answer_contains": "6:00 PM"
+  },
+  {
+    "id": "E05",
+    "category": "schedule_time",
+    "question": "What time is the Palolo Hongwanji class on Monday?",
+    "expected_answer_contains": "8:30 AM"
+  },
+  {
+    "id": "E06",
+    "category": "exact_date",
+    "question": "Is there a Waikiki Community Center class on January 19, 2026?",
+    "expected_answer_contains": "NO CLASS"
+  },
+  {
+    "id": "E07",
+    "category": "exact_date",
+    "question": "Is there a St. Peters class on January 19, 2026?",
+    "expected_answer_contains": "NO CLASS"
+  },
+  {
+    "id": "E08",
+    "category": "exact_date",
+    "question": "What time is the Waikiki Community Center class on January 12, 2026?",
+    "expected_answer_contains": "6:00 PM"
+  },
+  {
+    "id": "E09",
+    "category": "exact_date",
+    "question": "What time is the St. Peters class on January 12, 2026?",
+    "expected_answer_contains": "5:00 PM"
+  },
+  {
+    "id": "E10",
+    "category": "exact_date",
+    "question": "What time is the Palolo Hongwanji class on January 12, 2026?",
+    "expected_answer_contains": "8:30 AM"
+  },
+  {
+    "id": "E11",
+    "category": "room_rule",
+    "question": "Where is the Waikiki Monday 6 PM class held?",
+    "expected_answer_contains": "Auditorium"
+  },
+  {
+    "id": "E12",
+    "category": "room_rule",
+    "question": "Where is the Waikiki class held when Tuesday is the second Tuesday?",
+    "expected_answer_contains": "Room 205E"
+  },
+  {
+    "id": "E13",
+    "category": "paraphrase",
+    "question": "On Mondays, when does the class at St. Peters start?",
+    "expected_answer_contains": "5:00 PM"
+  },
+  {
+    "id": "E14",
+    "category": "paraphrase",
+    "question": "When should I arrive for the Monday evening Waikiki class?",
+    "expected_answer_contains": "6:00 PM"
+  },
+  {
+    "id": "E15",
+    "category": "insufficient_information",
+    "question": "What is the parking fee at Waikiki Community Center?",
+    "expected_answer_contains": "I don't have enough information in the schedule corpus."
+  }
+]

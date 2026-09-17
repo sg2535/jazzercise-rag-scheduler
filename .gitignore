@@ -1,0 +1,23 @@
+# Python virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Local Chroma vector database
+chroma_db/
+
+# Environment variables / secrets
+.env
+
+# VS Code settings
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Original source workbook - local only
+data/raw/Calendar_LHKH_online 2026.xlsx

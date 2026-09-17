@@ -1,0 +1,799 @@
+[
+  {
+    "id": "E01",
+    "category": "room_rule",
+    "question": "Which room does the Waikiki Community Center class use on the second Tuesday of the month?",
+    "expected_answer_contains": "Room 205E",
+    "generated_answer": "According to [Source 1], on the second Tuesday of every month, the class is held in Room 205E.",
+    "result": "PASS",
+    "route": "semantic",
+    "extracted_date": null,
+    "extracted_location": "Waikiki Community Center",
+    "retrieved_sources": [
+      {
+        "rank": 1,
+        "page_content": "Waikiki Community Center scheduling rule.\nRule: Tuesday\n- Class time: 6:00 PM\n- Default room: Auditorium\n- Exception: On the second Tuesday of every month, the class is held in Room 205E.",
+        "metadata": {
+          "location": "Waikiki Community Center",
+          "rule_name": "Tuesday",
+          "source": "waikiki_schedule_rules.md",
+          "document_type": "schedule_rule"
+        }
+      },
+      {
+        "rank": 2,
+        "page_content": "Waikiki Community Center scheduling rule.\nRule: Saturday\n- Class time: 8:30 AM\n- Room: Room 205E",
+        "metadata": {
+          "document_type": "schedule_rule",
+          "source": "waikiki_schedule_rules.md",
+          "rule_name": "Saturday",
+          "location": "Waikiki Community Center"
+        }
+      },
+      {
+        "rank": 3,
+        "page_content": "Waikiki Community Center scheduling rule.\nRule: Thursday\n- Class time: 6:00 PM\n- Room: Room 205E",
+        "metadata": {
+          "rule_name": "Thursday",
+          "source": "waikiki_schedule_rules.md",
+          "location": "Waikiki Community Center",
+          "document_type": "schedule_rule"
+        }
+      },
+      {
+        "rank": 4,
+        "page_content": "Waikiki Community Center scheduling rule.\nRule: Sunday\n- Class time: 8:30 AM\n- Room: Room 205E",
+        "metadata": {
+          "source": "waikiki_schedule_rules.md",
+          "document_type": "schedule_rule",
+          "location": "Waikiki Community Center",
+          "rule_name": "Sunday"
+        }
+      }
+    ]
+  },
+  {
+    "id": "E02",
+    "category": "room_rule",
+    "question": "What is the normal room for the Waikiki Tuesday class?",
+    "expected_answer_contains": "Auditorium",
+    "generated_answer": "According to [Source 1], the default room for the Waikiki Tuesday class is the Auditorium.",
+    "result": "PASS",
+    "route": "semantic",
+    "extracted_date": null,
+    "extracted_location": "Waikiki Community Center",
+    "retrieved_sources": [
+      {
+        "rank": 1,
+        "page_content": "Waikiki Community Center scheduling rule.\nRule: Tuesday\n- Class time: 6:00 PM\n- Default room: Auditorium\n- Exception: On the second Tuesday of every month, the class is held in Room 205E.",
+        "metadata": {
+          "rule_name": "Tuesday",
+          "location": "Waikiki Community Center",
+          "document_type": "schedule_rule",
+          "source": "waikiki_schedule_rules.md"
+        }
+      },
+      {
+        "rank": 2,
+        "page_content": "Waikiki Community Center scheduling rule.\nRule: Saturday\n- Class time: 8:30 AM\n- Room: Room 205E",
+        "metadata": {
+          "location": "Waikiki Community Center",
+          "source": "waikiki_schedule_rules.md",
+          "rule_name": "Saturday",
+          "document_type": "schedule_rule"
+        }
+      },
+      {
+        "rank": 3,
+        "page_content": "Waikiki Community Center scheduling rule.\nRule: Monday\n- Class time: 6:00 PM\n- Room: Auditorium",
+        "metadata": {
+          "document_type": "schedule_rule",
+          "rule_name": "Monday",
+          "source": "waikiki_schedule_rules.md",
+          "location": "Waikiki Community Center"
+        }
+      },
+      {
+        "rank": 4,
+        "page_content": "Waikiki Community Center scheduling rule.\nRule: Sunday\n- Class time: 8:30 AM\n- Room: Room 205E",
+        "metadata": {
+          "source": "waikiki_schedule_rules.md",
+          "location": "Waikiki Community Center",
+          "rule_name": "Sunday",
+          "document_type": "schedule_rule"
+        }
+      }
+    ]
+  },
+  {
+    "id": "E03",
+    "category": "schedule_time",
+    "question": "What time is the St. Peters Jazzercise class on Monday?",
+    "expected_answer_contains": "5:00 PM",
+    "generated_answer": "According to the schedule, the St. Peters Jazzercise class on Monday has a time of 5:00 PM. [Source 1], [Source 2], [Source 3], and [Source 4] all confirm this information.",
+    "result": "PASS",
+    "route": "semantic",
+    "extracted_date": null,
+    "extracted_location": "St. Peters",
+    "retrieved_sources": [
+      {
+        "rank": 1,
+        "page_content": "St. Peters has a Jazzercise class on Monday, April 13, 2026 at 5:00 PM.",
+        "metadata": {
+          "status": "Scheduled",
+          "raw_entry": "5pm St.Peters",
+          "cell": "C9",
+          "date": "2026-04-13",
+          "sheet": "April",
+          "day_of_week": "Monday",
+          "year": 2026,
+          "source": "Calendar_LHKH_online_2026.xlsx",
+          "location": "St. Peters",
+          "time": "5:00 PM",
+          "month": "April"
+        }
+      },
+      {
+        "rank": 2,
+        "page_content": "St. Peters has a Jazzercise class on Monday, April 27, 2026 at 5:00 PM.",
+        "metadata": {
+          "cell": "C13",
+          "year": 2026,
+          "raw_entry": "5pm St.Peters",
+          "month": "April",
+          "status": "Scheduled",
+          "date": "2026-04-27",
+          "sheet": "April",
+          "day_of_week": "Monday",
+          "time": "5:00 PM",
+          "source": "Calendar_LHKH_online_2026.xlsx",
+          "location": "St. Peters"
+        }
+      },
+      {
+        "rank": 3,
+        "page_content": "St. Peters has a Jazzercise class on Monday, August 24, 2026 at 5:00 PM.",
+        "metadata": {
+          "source": "Calendar_LHKH_online_2026.xlsx",
+          "date": "2026-08-24",
+          "month": "August",
+          "status": "Scheduled",
+          "location": "St. Peters",
+          "time": "5:00 PM",
+          "sheet": "August",
+          "raw_entry": "5pm St.Peters",
+          "year": 2026,
+          "day_of_week": "Monday",
+          "cell": "C13"
+        }
+      },
+      {
+        "rank": 4,
+        "page_content": "St. Peters has a Jazzercise class on Monday, January 12, 2026 at 5:00 PM.",
+        "metadata": {
+          "time": "5:00 PM",
+          "day_of_week": "Monday",
+          "date": "2026-01-12",
+          "location": "St. Peters",
+          "source": "Calendar_LHKH_online_2026.xlsx",
+          "month": "January",
+          "status": "Scheduled",
+          "year": 2026,
+          "cell": "C9",
+          "raw_entry": "5pm St.Peters",
+          "sheet": "January"
+        }
+      }
+    ]
+  },
+  {
+    "id": "E04",
+    "category": "schedule_time",
+    "question": "What time is the Waikiki Community Center class on Monday?",
+    "expected_answer_contains": "6:00 PM",
+    "generated_answer": "According to the retrieved context, specifically [Source 3], the Waikiki Community Center class on Monday is at 6:00 PM.",
+    "result": "PASS",
+    "route": "semantic",
+    "extracted_date": null,
+    "extracted_location": "Waikiki Community Center",
+    "retrieved_sources": [
+      {
+        "rank": 1,
+        "page_content": "Waikiki Community Center scheduling rule.\nRule: Sunday\n- Class time: 8:30 AM\n- Room: Room 205E",
+        "metadata": {
+          "location": "Waikiki Community Center",
+          "source": "waikiki_schedule_rules.md",
+          "document_type": "schedule_rule",
+          "rule_name": "Sunday"
+        }
+      },
+      {
+        "rank": 2,
+        "page_content": "Waikiki Community Center scheduling rule.\nRule: Saturday\n- Class time: 8:30 AM\n- Room: Room 205E",
+        "metadata": {
+          "source": "waikiki_schedule_rules.md",
+          "rule_name": "Saturday",
+          "document_type": "schedule_rule",
+          "location": "Waikiki Community Center"
+        }
+      },
+      {
+        "rank": 3,
+        "page_content": "Waikiki Community Center scheduling rule.\nRule: Monday\n- Class time: 6:00 PM\n- Room: Auditorium",
+        "metadata": {
+          "document_type": "schedule_rule",
+          "rule_name": "Monday",
+          "source": "waikiki_schedule_rules.md",
+          "location": "Waikiki Community Center"
+        }
+      },
+      {
+        "rank": 4,
+        "page_content": "Waikiki Community Center scheduling rule.\nRule: Thursday\n- Class time: 6:00 PM\n- Room: Room 205E",
+        "metadata": {
+          "rule_name": "Thursday",
+          "location": "Waikiki Community Center",
+          "source": "waikiki_schedule_rules.md",
+          "document_type": "schedule_rule"
+        }
+      }
+    ]
+  },
+  {
+    "id": "E05",
+    "category": "schedule_time",
+    "question": "What time is the Palolo Hongwanji class on Monday?",
+    "expected_answer_contains": "8:30 AM",
+    "generated_answer": "According to the retrieved context, Palolo Hongwanji has a Jazzercise class on Monday at 8:30 AM. [Source 1], [Source 2], and [Source 3] all confirm this time.",
+    "result": "PASS",
+    "route": "semantic",
+    "extracted_date": null,
+    "extracted_location": "Palolo Hongwanji",
+    "retrieved_sources": [
+      {
+        "rank": 1,
+        "page_content": "Palolo Hongwanji has a Jazzercise class on Monday, February 09, 2026 at 8:30 AM.",
+        "metadata": {
+          "day_of_week": "Monday",
+          "raw_entry": "8:30 am Palolo Hongwanji",
+          "date": "2026-02-09",
+          "time": "8:30 AM",
+          "sheet": "February",
+          "status": "Scheduled",
+          "month": "February",
+          "location": "Palolo Hongwanji",
+          "year": 2026,
+          "source": "Calendar_LHKH_online_2026.xlsx",
+          "cell": "C7"
+        }
+      },
+      {
+        "rank": 2,
+        "page_content": "Palolo Hongwanji has a Jazzercise class on Monday, February 23, 2026 at 8:30 AM.",
+        "metadata": {
+          "status": "Scheduled",
+          "raw_entry": "8:30 am Palolo Hongwanji",
+          "time": "8:30 AM",
+          "day_of_week": "Monday",
+          "year": 2026,
+          "date": "2026-02-23",
+          "source": "Calendar_LHKH_online_2026.xlsx",
+          "sheet": "February",
+          "location": "Palolo Hongwanji",
+          "cell": "C11",
+          "month": "February"
+        }
+      },
+      {
+        "rank": 3,
+        "page_content": "Palolo Hongwanji has a Jazzercise class on Monday, February 02, 2026 at 8:30 AM.",
+        "metadata": {
+          "day_of_week": "Monday",
+          "location": "Palolo Hongwanji",
+          "cell": "C5",
+          "year": 2026,
+          "month": "February",
+          "status": "Scheduled",
+          "sheet": "February",
+          "source": "Calendar_LHKH_online_2026.xlsx",
+          "time": "8:30 AM",
+          "date": "2026-02-02",
+          "raw_entry": "8:30 am Palolo Hongwanji"
+        }
+      },
+      {
+        "rank": 4,
+        "page_content": "Palolo Hongwanji has a Jazzercise class on Monday, April 13, 2026 at 8:30 AM.",
+        "metadata": {
+          "cell": "C9",
+          "status": "Scheduled",
+          "date": "2026-04-13",
+          "month": "April",
+          "location": "Palolo Hongwanji",
+          "day_of_week": "Monday",
+          "time": "8:30 AM",
+          "raw_entry": "8:30 am Palolo Hongwanji",
+          "year": 2026,
+          "source": "Calendar_LHKH_online_2026.xlsx",
+          "sheet": "April"
+        }
+      }
+    ]
+  },
+  {
+    "id": "E06",
+    "category": "exact_date",
+    "question": "Is there a Waikiki Community Center class on January 19, 2026?",
+    "expected_answer_contains": "NO CLASS",
+    "generated_answer": "Yes, according to the schedule, there is NO CLASS at Waikiki Community Center on January 19, 2026. [Source 1]",
+    "result": "PASS",
+    "route": "metadata",
+    "extracted_date": "2026-01-19",
+    "extracted_location": "Waikiki Community Center",
+    "retrieved_sources": [
+      {
+        "rank": 1,
+        "page_content": "Waikiki Community Center has NO CLASS on Monday, January 19, 2026.",
+        "metadata": {
+          "month": "January",
+          "year": 2026,
+          "sheet": "January",
+          "source": "Calendar_LHKH_online_2026.xlsx",
+          "cell": "C11",
+          "status": "NO CLASS",
+          "day_of_week": "Monday",
+          "date": "2026-01-19",
+          "raw_entry": "WKK Comm Ctr NO CLASS",
+          "location": "Waikiki Community Center"
+        }
+      }
+    ]
+  },
+  {
+    "id": "E07",
+    "category": "exact_date",
+    "question": "Is there a St. Peters class on January 19, 2026?",
+    "expected_answer_contains": "NO CLASS",
+    "generated_answer": "Yes, according to the schedule, there is NO CLASS at St. Peters on January 19, 2026. [Source 1]",
+    "result": "PASS",
+    "route": "metadata",
+    "extracted_date": "2026-01-19",
+    "extracted_location": "St. Peters",
+    "retrieved_sources": [
+      {
+        "rank": 1,
+        "page_content": "St. Peters has NO CLASS on Monday, January 19, 2026.",
+        "metadata": {
+          "date": "2026-01-19",
+          "month": "January",
+          "year": 2026,
+          "source": "Calendar_LHKH_online_2026.xlsx",
+          "sheet": "January",
+          "status": "NO CLASS",
+          "day_of_week": "Monday",
+          "cell": "C11",
+          "location": "St. Peters",
+          "raw_entry": "St.Peters NO CLASS"
+        }
+      }
+    ]
+  },
+  {
+    "id": "E08",
+    "category": "exact_date",
+    "question": "What time is the Waikiki Community Center class on January 12, 2026?",
+    "expected_answer_contains": "6:00 PM",
+    "generated_answer": "The Waikiki Community Center class on January 12, 2026 is at 6:00 PM. [Source 1]",
+    "result": "PASS",
+    "route": "metadata",
+    "extracted_date": "2026-01-12",
+    "extracted_location": "Waikiki Community Center",
+    "retrieved_sources": [
+      {
+        "rank": 1,
+        "page_content": "Waikiki Community Center has a Jazzercise class on Monday, January 12, 2026 at 6:00 PM.",
+        "metadata": {
+          "location": "Waikiki Community Center",
+          "date": "2026-01-12",
+          "time": "6:00 PM",
+          "day_of_week": "Monday",
+          "source": "Calendar_LHKH_online_2026.xlsx",
+          "status": "Scheduled",
+          "raw_entry": "6 pm  WKK Comm Ctr",
+          "month": "January",
+          "year": 2026,
+          "sheet": "January",
+          "cell": "C9"
+        }
+      }
+    ]
+  },
+  {
+    "id": "E09",
+    "category": "exact_date",
+    "question": "What time is the St. Peters class on January 12, 2026?",
+    "expected_answer_contains": "5:00 PM",
+    "generated_answer": "The St. Peters class on January 12, 2026 is at 5:00 PM. [Source 1]",
+    "result": "PASS",
+    "route": "metadata",
+    "extracted_date": "2026-01-12",
+    "extracted_location": "St. Peters",
+    "retrieved_sources": [
+      {
+        "rank": 1,
+        "page_content": "St. Peters has a Jazzercise class on Monday, January 12, 2026 at 5:00 PM.",
+        "metadata": {
+          "time": "5:00 PM",
+          "status": "Scheduled",
+          "raw_entry": "5pm St.Peters",
+          "source": "Calendar_LHKH_online_2026.xlsx",
+          "cell": "C9",
+          "date": "2026-01-12",
+          "month": "January",
+          "year": 2026,
+          "day_of_week": "Monday",
+          "location": "St. Peters",
+          "sheet": "January"
+        }
+      }
+    ]
+  },
+  {
+    "id": "E10",
+    "category": "exact_date",
+    "question": "What time is the Palolo Hongwanji class on January 12, 2026?",
+    "expected_answer_contains": "8:30 AM",
+    "generated_answer": "The Palolo Hongwanji class on January 12, 2026 is at 8:30 AM. [Source 1]",
+    "result": "PASS",
+    "route": "metadata",
+    "extracted_date": "2026-01-12",
+    "extracted_location": "Palolo Hongwanji",
+    "retrieved_sources": [
+      {
+        "rank": 1,
+        "page_content": "Palolo Hongwanji has a Jazzercise class on Monday, January 12, 2026 at 8:30 AM.",
+        "metadata": {
+          "location": "Palolo Hongwanji",
+          "status": "Scheduled",
+          "year": 2026,
+          "cell": "C9",
+          "time": "8:30 AM",
+          "raw_entry": "8:30 am Palolo Hongwanji",
+          "sheet": "January",
+          "month": "January",
+          "day_of_week": "Monday",
+          "source": "Calendar_LHKH_online_2026.xlsx",
+          "date": "2026-01-12"
+        }
+      }
+    ]
+  },
+  {
+    "id": "E11",
+    "category": "room_rule",
+    "question": "Where is the Waikiki Monday 6 PM class held?",
+    "expected_answer_contains": "Auditorium",
+    "generated_answer": "According to [Source 2], the Waikiki Community Center Jazzercise class on Monday is held in the Auditorium.",
+    "result": "PASS",
+    "route": "semantic",
+    "extracted_date": null,
+    "extracted_location": "Waikiki Community Center",
+    "retrieved_sources": [
+      {
+        "rank": 1,
+        "page_content": "Waikiki Community Center scheduling rule.\nRule: Tuesday\n- Class time: 6:00 PM\n- Default room: Auditorium\n- Exception: On the second Tuesday of every month, the class is held in Room 205E.",
+        "metadata": {
+          "rule_name": "Tuesday",
+          "source": "waikiki_schedule_rules.md",
+          "document_type": "schedule_rule",
+          "location": "Waikiki Community Center"
+        }
+      },
+      {
+        "rank": 2,
+        "page_content": "Waikiki Community Center scheduling rule.\nRule: Monday\n- Class time: 6:00 PM\n- Room: Auditorium",
+        "metadata": {
+          "source": "waikiki_schedule_rules.md",
+          "location": "Waikiki Community Center",
+          "document_type": "schedule_rule",
+          "rule_name": "Monday"
+        }
+      },
+      {
+        "rank": 3,
+        "page_content": "Waikiki Community Center has a Jazzercise class on Monday, February 23, 2026 at 6:00 PM.",
+        "metadata": {
+          "cell": "C11",
+          "year": 2026,
+          "sheet": "February",
+          "raw_entry": "6 pm  WKK Comm Ctr",
+          "month": "February",
+          "time": "6:00 PM",
+          "day_of_week": "Monday",
+          "source": "Calendar_LHKH_online_2026.xlsx",
+          "date": "2026-02-23",
+          "status": "Scheduled",
+          "location": "Waikiki Community Center"
+        }
+      },
+      {
+        "rank": 4,
+        "page_content": "Waikiki Community Center has a Jazzercise class on Monday, February 09, 2026 at 6:00 PM.",
+        "metadata": {
+          "year": 2026,
+          "time": "6:00 PM",
+          "month": "February",
+          "cell": "C7",
+          "status": "Scheduled",
+          "day_of_week": "Monday",
+          "location": "Waikiki Community Center",
+          "sheet": "February",
+          "date": "2026-02-09",
+          "raw_entry": "6 pm  WKK Comm Ctr",
+          "source": "Calendar_LHKH_online_2026.xlsx"
+        }
+      }
+    ]
+  },
+  {
+    "id": "E12",
+    "category": "room_rule",
+    "question": "Where is the Waikiki class held when Tuesday is the second Tuesday?",
+    "expected_answer_contains": "Room 205E",
+    "generated_answer": "According to the rule [Source 1], when Tuesday is the second Tuesday of every month, the class is held in Room 205E.",
+    "result": "PASS",
+    "route": "semantic",
+    "extracted_date": null,
+    "extracted_location": "Waikiki Community Center",
+    "retrieved_sources": [
+      {
+        "rank": 1,
+        "page_content": "Waikiki Community Center scheduling rule.\nRule: Tuesday\n- Class time: 6:00 PM\n- Default room: Auditorium\n- Exception: On the second Tuesday of every month, the class is held in Room 205E.",
+        "metadata": {
+          "document_type": "schedule_rule",
+          "location": "Waikiki Community Center",
+          "source": "waikiki_schedule_rules.md",
+          "rule_name": "Tuesday"
+        }
+      },
+      {
+        "rank": 2,
+        "page_content": "Waikiki Community Center has a Jazzercise class on Tuesday, February 24, 2026 at 6:00 PM.",
+        "metadata": {
+          "cell": "D11",
+          "year": 2026,
+          "date": "2026-02-24",
+          "month": "February",
+          "location": "Waikiki Community Center",
+          "sheet": "February",
+          "status": "Scheduled",
+          "day_of_week": "Tuesday",
+          "time": "6:00 PM",
+          "source": "Calendar_LHKH_online_2026.xlsx",
+          "raw_entry": "6:00 pm  WKK Comm Ctr"
+        }
+      },
+      {
+        "rank": 3,
+        "page_content": "Waikiki Community Center has a Jazzercise class on Monday, February 23, 2026 at 6:00 PM.",
+        "metadata": {
+          "year": 2026,
+          "month": "February",
+          "time": "6:00 PM",
+          "day_of_week": "Monday",
+          "date": "2026-02-23",
+          "status": "Scheduled",
+          "cell": "C11",
+          "sheet": "February",
+          "source": "Calendar_LHKH_online_2026.xlsx",
+          "raw_entry": "6 pm  WKK Comm Ctr",
+          "location": "Waikiki Community Center"
+        }
+      },
+      {
+        "rank": 4,
+        "page_content": "Waikiki Community Center has a Jazzercise class on Saturday, February 28, 2026 at 8:30 AM.",
+        "metadata": {
+          "date": "2026-02-28",
+          "raw_entry": "8:30am  WKKComm Ctr",
+          "time": "8:30 AM",
+          "status": "Scheduled",
+          "location": "Waikiki Community Center",
+          "sheet": "February",
+          "month": "February",
+          "year": 2026,
+          "day_of_week": "Saturday",
+          "source": "Calendar_LHKH_online_2026.xlsx",
+          "cell": "H11"
+        }
+      }
+    ]
+  },
+  {
+    "id": "E13",
+    "category": "paraphrase",
+    "question": "On Mondays, when does the class at St. Peters start?",
+    "expected_answer_contains": "5:00 PM",
+    "generated_answer": "According to the schedule, the Jazzercise class at St. Peters starts at 5:00 PM on Mondays in January, August, and April, 2026.",
+    "result": "PASS",
+    "route": "semantic",
+    "extracted_date": null,
+    "extracted_location": "St. Peters",
+    "retrieved_sources": [
+      {
+        "rank": 1,
+        "page_content": "St. Peters has a Jazzercise class on Monday, January 12, 2026 at 5:00 PM.",
+        "metadata": {
+          "raw_entry": "5pm St.Peters",
+          "date": "2026-01-12",
+          "source": "Calendar_LHKH_online_2026.xlsx",
+          "month": "January",
+          "time": "5:00 PM",
+          "day_of_week": "Monday",
+          "year": 2026,
+          "location": "St. Peters",
+          "cell": "C9",
+          "sheet": "January",
+          "status": "Scheduled"
+        }
+      },
+      {
+        "rank": 2,
+        "page_content": "St. Peters has a Jazzercise class on Monday, August 24, 2026 at 5:00 PM.",
+        "metadata": {
+          "month": "August",
+          "location": "St. Peters",
+          "source": "Calendar_LHKH_online_2026.xlsx",
+          "time": "5:00 PM",
+          "cell": "C13",
+          "date": "2026-08-24",
+          "status": "Scheduled",
+          "sheet": "August",
+          "day_of_week": "Monday",
+          "raw_entry": "5pm St.Peters",
+          "year": 2026
+        }
+      },
+      {
+        "rank": 3,
+        "page_content": "St. Peters has a Jazzercise class on Monday, April 27, 2026 at 5:00 PM.",
+        "metadata": {
+          "location": "St. Peters",
+          "month": "April",
+          "source": "Calendar_LHKH_online_2026.xlsx",
+          "sheet": "April",
+          "date": "2026-04-27",
+          "time": "5:00 PM",
+          "status": "Scheduled",
+          "year": 2026,
+          "day_of_week": "Monday",
+          "raw_entry": "5pm St.Peters",
+          "cell": "C13"
+        }
+      },
+      {
+        "rank": 4,
+        "page_content": "St. Peters has a Jazzercise class on Monday, February 23, 2026 at 5:00 PM.",
+        "metadata": {
+          "cell": "C11",
+          "month": "February",
+          "raw_entry": "5pm St.Peters",
+          "time": "5:00 PM",
+          "day_of_week": "Monday",
+          "location": "St. Peters",
+          "date": "2026-02-23",
+          "source": "Calendar_LHKH_online_2026.xlsx",
+          "status": "Scheduled",
+          "sheet": "February",
+          "year": 2026
+        }
+      }
+    ]
+  },
+  {
+    "id": "E14",
+    "category": "paraphrase",
+    "question": "When should I arrive for the Monday evening Waikiki class?",
+    "expected_answer_contains": "6:00 PM",
+    "generated_answer": "According to the Waikiki Community Center scheduling rule [Source 1], the class time for Monday is 6:00 PM. It is not specified when to arrive, only the class time.",
+    "result": "PASS",
+    "route": "semantic",
+    "extracted_date": null,
+    "extracted_location": "Waikiki Community Center",
+    "retrieved_sources": [
+      {
+        "rank": 1,
+        "page_content": "Waikiki Community Center scheduling rule.\nRule: Monday\n- Class time: 6:00 PM\n- Room: Auditorium",
+        "metadata": {
+          "location": "Waikiki Community Center",
+          "source": "waikiki_schedule_rules.md",
+          "document_type": "schedule_rule",
+          "rule_name": "Monday"
+        }
+      },
+      {
+        "rank": 2,
+        "page_content": "Waikiki Community Center scheduling rule.\nRule: Tuesday\n- Class time: 6:00 PM\n- Default room: Auditorium\n- Exception: On the second Tuesday of every month, the class is held in Room 205E.",
+        "metadata": {
+          "rule_name": "Tuesday",
+          "source": "waikiki_schedule_rules.md",
+          "document_type": "schedule_rule",
+          "location": "Waikiki Community Center"
+        }
+      },
+      {
+        "rank": 3,
+        "page_content": "Waikiki Community Center scheduling rule.\nRule: Saturday\n- Class time: 8:30 AM\n- Room: Room 205E",
+        "metadata": {
+          "location": "Waikiki Community Center",
+          "rule_name": "Saturday",
+          "document_type": "schedule_rule",
+          "source": "waikiki_schedule_rules.md"
+        }
+      },
+      {
+        "rank": 4,
+        "page_content": "Waikiki Community Center scheduling rule.\nRule: Sunday\n- Class time: 8:30 AM\n- Room: Room 205E",
+        "metadata": {
+          "rule_name": "Sunday",
+          "source": "waikiki_schedule_rules.md",
+          "location": "Waikiki Community Center",
+          "document_type": "schedule_rule"
+        }
+      }
+    ]
+  },
+  {
+    "id": "E15",
+    "category": "insufficient_information",
+    "question": "What is the parking fee at Waikiki Community Center?",
+    "expected_answer_contains": "I don't have enough information in the schedule corpus.",
+    "generated_answer": "I don't have enough information in the schedule corpus.",
+    "result": "PASS",
+    "route": "semantic",
+    "extracted_date": null,
+    "extracted_location": "Waikiki Community Center",
+    "retrieved_sources": [
+      {
+        "rank": 1,
+        "page_content": "Waikiki Community Center scheduling rule.\nRule: Saturday\n- Class time: 8:30 AM\n- Room: Room 205E",
+        "metadata": {
+          "location": "Waikiki Community Center",
+          "document_type": "schedule_rule",
+          "rule_name": "Saturday",
+          "source": "waikiki_schedule_rules.md"
+        }
+      },
+      {
+        "rank": 2,
+        "page_content": "Waikiki Community Center scheduling rule.\nRule: Thursday\n- Class time: 6:00 PM\n- Room: Room 205E",
+        "metadata": {
+          "source": "waikiki_schedule_rules.md",
+          "document_type": "schedule_rule",
+          "location": "Waikiki Community Center",
+          "rule_name": "Thursday"
+        }
+      },
+      {
+        "rank": 3,
+        "page_content": "Waikiki Community Center scheduling rule.\nRule: Monday\n- Class time: 6:00 PM\n- Room: Auditorium",
+        "metadata": {
+          "source": "waikiki_schedule_rules.md",
+          "location": "Waikiki Community Center",
+          "document_type": "schedule_rule",
+          "rule_name": "Monday"
+        }
+      },
+      {
+        "rank": 4,
+        "page_content": "Waikiki Community Center scheduling rule.\nRule: Sunday\n- Class time: 8:30 AM\n- Room: Room 205E",
+        "metadata": {
+          "document_type": "schedule_rule",
+          "location": "Waikiki Community Center",
+          "source": "waikiki_schedule_rules.md",
+          "rule_name": "Sunday"
+        }
+      }
+    ]
+  }
+]
